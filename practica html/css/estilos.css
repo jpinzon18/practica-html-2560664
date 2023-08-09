@@ -10,7 +10,7 @@ estilo global
     margin: 0;
 }
 body{
-    background: rgb(152, 52, 233);
+    background: rgb(226, 226, 226);
     box-sizing: border-box;
 }
 /*--------------
@@ -18,23 +18,23 @@ estilo Encabezado
 -------------*/
 header{
     box-sizing: border-box;
-    background: rgb(117, 3, 170);
-    padding: 35px ;
+    background: rgb(255, 255, 255);
+    padding: 20px ;
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: relative;
 }
-h1{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-align: center;
+h5{
+    color: rgb(4, 57, 164);
+    font-size: 15px;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
 
 }
 .logo{
     position: absolute;
     width: 60px;
-     height: 60px;
+    height: 60px;
     border-radius:50%;
     margin-left: -80px;
 }
@@ -43,8 +43,8 @@ estilo contenido
 -------------*/
 .contenido{
     width: 100%;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
 }
 
 img{
@@ -52,49 +52,74 @@ img{
     position: relative;
     width: 320px;
     height: 320px;
-   padding-left: 50px;
+    padding-left: 50px;
+    border-radius:15% ;
+
 }
+
+
 p{
-    font-size: 40px;
-    text-align: Calibri;
-    padding: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    padding: 25px;
     font-family: 'Oswald', sans-serif;
 }
 
+
+
+
+.contenido2{
+    width: 150%;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    height: 80px;
+}
+
+r{
+    color: (0,0,0);
+    font-size: 35px;
+    text-align: left;
+    padding: 70px;
+    font-family:'Oswald',sans-serif ;
+    display: flex;
+    justify-content: flex-start;
+}
 /*--------------
 estilo menu
 -------------*/
 
 .menu {
-    height: 80px;  
-    background-color:rgb(117, 3, 170);
+    height: 29px;  
+    background-color:rgb(255, 255, 255);
     list-style: none;
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 50px;
+    padding: 1px;
+    text-align: right;
+
 }
 ul li{
  display: inline-block;
 }
 ul a{
     text-decoration: none;
-    color: #ffffff;
+    color: #a00404;
     text-align: center;
-    background-color: #491f64;
-    padding: 10px 16px;
+    background-color: #ffffff;
+    padding: -5px 5px;
     border-radius: 5px;
     opacity: 0.8;
-    font-size: 26px;
+    font-size: 23px;
     display: inline-block;
-    margin: 4px;
+    margin: 2px;
     line-height: 1;
     outline: none;
     transition: 0.2s ease;
     font-family: 'Mulish', sans-serif;
+    justify-content: space-between;
 }
 
 ul li a.activo{
-    background: rgb(8, 4, 42);
+    background: rgb(255, 255, 255);
     transform: none;
 }
 
@@ -105,7 +130,18 @@ ul li a:hover{
 /*--------------
 estilo formulario basico
 -------------*/
+header{
+background-color: rgb(255, 255,255);
+}
 
+body{
+background-color:  rgb(226, 226, 226);
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+}
 .form-basico {
     max-width: 640px;
     margin: 0 auto;
@@ -126,7 +162,7 @@ estilo formulario basico
     text-align: center;
     display: inline-block;
     box-sizing: border-box;
-    color: #4c565e;
+    color: #ffffff;
     font-size: 24px;
     padding: 0 10px 15px;
     border-bottom: 2px solid rgb(19, 19, 59);
@@ -138,7 +174,7 @@ estilo formulario basico
 .form-basico .entrada label {
     display: inline-block;
     box-sizing: border-box;
-    color: #5F5F5F;
+    color: #001e82;
     width: 180px;
     text-align: left;
     vertical-align: top;
@@ -148,12 +184,12 @@ estilo formulario basico
 .form-basico input[type=text],
 .form-basico input[type=email], 
 .form-basico input[type=password]{
-    color: #5f5f5f;
+    color: #020797;
     box-sizing: border-box;
     width: 240px;
-    box-shadow: 1px 2px 4px 0 rgba(37, 26, 110, 0.08);
+    box-shadow: 1px 2px 4px 0 rgba(34, 0, 255, 0.08);
     padding: 12px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #710707;
 }
 
 .form-basico input[type=radio],
@@ -200,7 +236,7 @@ estilo formulario basico
 
 .opciones label span {
     margin-left: 8px;
-    color: #5f5f5f;
+    color: #c84b4b;
     font-weight: normal;
 }
 
@@ -257,12 +293,226 @@ estilo formulario basico
     }
 }
 
-/* Resto del CSS */
-.form-basico input[type=email]:invalid {
-    border: 2px solid red;
+
+
+/*--------------
+estilo formulario Validacion
+-------------*/
+
+.form-validacion {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #01046e;
+ font: bold 14px sans-serif;
+    text-align: center;
 }
 
-.form-basico input[type=email]:valid {
-    border: 2px solid green;
+
+.form-validacion .entrada label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #5F5F5F;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
 }
-/* Resto del CSS */
+
+
+ .form-validacion input[type=text],
+ .form-validacion  input[type=email]{
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 12px;
+    border-radius: 3px;
+
+}
+  .campo:valid + .icon  {
+    color: green;
+  }
+  .campo:invalid + .icon {
+    color: rgb(227, 14, 14);
+  }
+
+.form-validacion input[type=radio],
+.form-validacion input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-validacion input[type=checkbox] {
+    margin-top: 13px;
+}
+.opciones {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div {
+    margin-top: 10px;
+}
+
+.opciones label span {
+    margin-left: 8px;
+    color: #5f5f5f;
+    font-weight: normal;
+}
+
+.opciones input {
+    width: auto;
+}
+
+.form-validacion input[type=submit] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(19, 19, 59);
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-validacion {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-validacion .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-validacion .titulo {
+        margin-bottom: 50px;
+    }
+    .form-validacion .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-validacion select {
+        width: 240px;
+    }
+    .form-validacion input[type=checkbox] {
+        margin-top: 0;
+    }
+    .form-validacion .opciones>div {
+        margin: 0 0 10px;
+    }
+    .form-validacion button {
+        margin: 0;
+    }
+}
+
+/* ACA ESTA PARA MODIFICAR COLOR REGISTRO
+/*--------------
+estilo formulario Validacion
+-------------*/
+
+.form-registro {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: #040156;
+ font: bold 14px sans-serif;
+    text-align: center;
+    margin-bottom:  40px;
+}
+
+
+.form-registro .entrada label {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+
+
+.form-registro input[type=text],
+.form-registro  input[type=email],
+.form-registro  input[type=password]{
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 12px;
+    border-radius: 3px;
+
+}
+  .campo:valid + .icon  {
+    color: green;
+  }
+  .campo:invalid + .icon {
+    color: rgb(227, 14, 14);
+  }
+
+  .form-registro select {
+    width: 240px;
+    height: 40px;
+}
+
+  .form-registro input[type=checkbox] {
+    box-shadow: none;
+    width: auto;
+}
+
+.form-registro input[type=checkbox] {
+    margin-top: 13px;
+}
+.form-registro input[type=submit] {
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    color: #ff0000;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*	diseño responsivo*/
+
+@media (max-width: 600px) {
+    .form-registro {
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-registro .entrada {
+        max-width: 300px;
+        margin: 25px auto;
+        text-align: left;
+    }
+    .form-registro .titulo {
+        margin-bottom: 50px;
+    }
+    .form-registro .entrada>label span {
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-registro select {
+        width: 240px;
+    }
+    .form-registro input[type=checkbox] {
+        margin-top: 0;
+    }
+    
+    .form-registro button {
+        margin: 0;
+    }
+}
